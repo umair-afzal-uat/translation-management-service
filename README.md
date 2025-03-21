@@ -53,6 +53,8 @@ For Artisan Related Command:
 docker-compose exec app php artisan migrate
 docker-compose exec app php artisan db:seed --class=LocaleSeeder
 docker-compose exec app php artisan db:seed --class=TranslationSeeder
+docker-compose exec app php artisan test --coverage-html=coverage-report
+
 
 ```
 if facing any issue run this:
@@ -63,6 +65,8 @@ docker-compose exec app composer i
 For Artisan Related Command:
 docker-compose exec app php artisan db:seed --class=LocaleSeeder
 docker-compose exec app php artisan db:seed --class=TranslationSeeder
+docker-compose exec app php artisan test --coverage-html=coverage-report
+
 ```
 
 This will start the following services:
